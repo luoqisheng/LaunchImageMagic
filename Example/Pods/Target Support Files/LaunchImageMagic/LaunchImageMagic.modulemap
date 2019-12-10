@@ -1,0 +1,6 @@
+framework module LaunchImageMagic {
+  umbrella header "LaunchImageMagic-umbrella.h"
+
+  export *
+  module * { export * }
+}

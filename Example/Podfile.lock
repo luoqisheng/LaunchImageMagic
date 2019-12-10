@@ -1,0 +1,16 @@
+PODS:
+  - LaunchImageMagic (0.1.0)
+
+DEPENDENCIES:
+  - LaunchImageMagic (from `../`)
+
+EXTERNAL SOURCES:
+  LaunchImageMagic:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LaunchImageMagic: 32ba8a6e8b3f2f74db732d7b3cd07e8d2d16acbb
+
+PODFILE CHECKSUM: 56698e0dbdd3ebcfbd0fe472cf7f619747f12af5
+
+COCOAPODS: 1.7.4

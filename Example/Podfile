@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'LaunchImageMagic_Example' do
+  pod 'LaunchImageMagic', :path => '../'
+
+  target 'LaunchImageMagic_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
