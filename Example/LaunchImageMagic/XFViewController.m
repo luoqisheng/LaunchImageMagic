@@ -35,8 +35,10 @@
     };
     UIImageView *find = findImageView();
 
-    int random = arc4random() % 3;
-    find.image = [UIImage imageNamed:[NSString stringWithFormat:@"launch_image_%d",random]];
+    NSInteger launchCount = [[NSUserDefaults standardUserDefaults] integerForKey:@"launch_count"];
+    int choose = launchCount % 3;
+    [[NSUserDefaults standardUserDefaults] setInteger:++launchCount forKey:@"launch_count"];
+    find.image = [UIImage imageNamed:[NSString stringWithFormat:@"launch_image_%d",choose]];
     UIImage *launchImage = [XFLaunchImageManager imageWithVC:vc];
     [[XFLaunchImageManager shared] onNextLaunchImage:launchImage];
 }
